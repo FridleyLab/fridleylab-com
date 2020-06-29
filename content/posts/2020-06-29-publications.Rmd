@@ -1,0 +1,24 @@
+---
+title: Publications
+author: ''
+date: '2020-06-29'
+slug: publications
+categories: []
+tags: []
+---
+
+## 2020
+
+[An evolutionary framework for treating pediatric sarcomas](https://pubmed.ncbi.nlm.nih.gov/32176331/)
+
+## 2019
+
+[Predictors of survival trajectories among women with epithelial ovarian cancer](https://pubmed.ncbi.nlm.nih.gov/31839342/)
+
+[Patterns and predictors of genetic referral among ovarian cancer patients at a National Cancer Institute-Comprehensive Cancer Center](https://pubmed.ncbi.nlm.nih.gov/31600840/)
+
+[GMSimpute: a generalized two-step Lasso approach to impute missing values in label-free mass spectrum analysis](https://pubmed.ncbi.nlm.nih.gov/)
+
+[Prospective CYP2C19-Guided Voriconazole Prophylaxis in Patients With Neutropenic Acute Myeloid Leukemia Reduces the Incidence of Subtherapeutic Antifungal Plasma Concentrations](https://pubmed.ncbi.nlm.nih.gov/31549389/)
+
+[Network-based integrative clustering of multiple types of genomic data using non-negative matrix factorization](https://pubmed.ncbi.nlm.nih.gov/31999549/)

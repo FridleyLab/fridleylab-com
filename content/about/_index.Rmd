@@ -1,0 +1,110 @@
+---
+title: "About"
+description: "Meet the Fridley Lab"
+draft: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include = FALSE)
+library(purrr)
+library(glue)
+```
+
+```{r}
+links <- list(
+  "Brooke Fridley" = list(
+    email = "Brooke.Fridley@moffitt.org",
+    github = "blfridley",
+    link = "https://lab.moffitt.org/fridley/"
+  ),
+  "Jordan Creed" = list(
+    email = "Jordan.H.Creed@moffitt.org",
+    github = "jhcreed",
+    twitter = "jhcreed"
+  ),
+  "Chris Wilson" = list(
+    email = "Christopher.Wilson@moffitt.org",
+    github = "cwilso6"
+  )
+)
+link_images <- list(
+  email = "far fa-envelope-open",
+  twitter = "fab fa-twitter",
+  github = "fab fa-github",
+  link = "fas fa-link"
+)
+link_prefix <- list(
+  email = "mailto:",
+  twitter = "https://twitter.com/",
+  github = "https://github.com/",
+  link = "https://"
+)
+make_table <- function(name) {
+  this_links <- links[[name]]
+  if (!length(this_links)) return("")
+  rows <- purrr::imap(this_links, ~ glue::glue(
+    '<tr>\n<td><i class="{link_images[[.y]]}"></i></td>\n',
+    '<td><a href="{link_prefix[[.y]]}{.x}">{.x}</a></td>\n</tr>')
+  )
+  rows <- paste(rows, collapse = "\n")
+  paste(
+    '<table style="width: 85%">',
+    rows,
+    '</table>',
+    sep = "\n"
+  )
+}
+headshot_image <- function(img) {
+  paste0('<div class="headshot-container"><img class="headshot w90" src="', img, '"></div>')
+}
+```
+
+:::::: {.row .gutters .about-card}
+:::: {.col .col-6}
+## Brooke Fridley
+
+`r headshot_image("/img/headshot-fridley.jpg")`
+
+`r make_table("Brooke Fridley")`
+
+::::
+:::: {.col .col-6}
+
+Dr. Brooke Fridley's research is in the areas of statistical genomics, molecular epidemiology of cancer, cancer genomics, and pharmacogenomics. 
+She has extensive experience as a collaborating statistician, particularly in the design and analysis of studies involving multiple types of ‘omic data.
+Recently, she has been particularly involved in molecular epidemiology studies of ovarian cancer, pediatric pharmacogenomic collaborations examining the ontogeny-related metabolomic and transcriptomic changes, and the development of integrative ‘omic analysis methods.
+A cross-cutting theme across the lab is the use of R software for data science.
+We actively develop and maintain several R packages and user interfaces (e.g., Shiny applications) that aim to alleviate computational bottlenecks associated with conducting molecular epidemiology research.
+
+<!-- For a full list of publications and other academic activities, please see my [complete CV](http://travisgerke.com/cv/). -->
+
+::::
+::::::
+
+
+:::::: {.row .gutters}
+:::: {.col .col-6 .about-card}
+## Jordan Creed
+
+`r headshot_image("/img/headshot-creed.png")`
+
+`r make_table("Jordan Creed")`
+
+Jordan is a Research Data Analyst working in the domains of statistics, bioinformatics and epidemiology. 
+Her current work focuses on the molecular epidemiology of prostate and brain cancer.
+
+::::
+
+:::: {.col .col-6 .about-card}
+## Chris Wilson
+
+`r headshot_image("/img/headshot-wilson.png")`
+
+`r make_table("Chris Wilson")`
+
+Chris is awesome! 
+
+::::
+::::::

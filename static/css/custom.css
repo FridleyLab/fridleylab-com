@@ -1,0 +1,283 @@
+#top {
+  background: #FFFFFFF0;
+}
+
+#kube-about {
+  max-width: 800px;
+  margin: auto;
+}
+#kube-about p {
+  text-align: justify;
+}
+#kube-about h2 {
+  /*text-align: left;*/
+}
+.about-card {
+  margin-bottom: 3em;
+  border: solid #F0F0F0 2px;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+}
+.caption {
+  font-style: italic;
+  text-align: right;
+}
+sup {
+  font-size: small;
+}
+#top {
+  margin-bottom: 0px;
+}
+#top a {
+  color: #989898;
+  text-decoration: none;
+  font-weight: bold;
+}
+#post p {
+  text-align: justify;
+}
+#posts {
+  text-align: left;
+}
+#posts h2 a {
+  color: black;
+}
+#top #top-nav-extra span, #top #top-nav-extra a {
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  line-height: 28px;
+  border-radius: 28px;
+  padding: 0 6px;
+  font-size: 1.3em;
+}
+#components h4 {
+  font-size: 1.4em;
+}
+#components p {
+  font-size: 0.95em;
+}
+.headshot {
+  border: 2px solid #989898;
+  border-radius: 51%;
+  max-width: 175px;
+  text-align: center;
+}
+.headshot-container {
+  width: 100%;
+  text-align: center;
+}
+#components .item {
+  background: #f5f5f9;
+}
+.frontpage-link-container {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.frontpage-link-container:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+.frontpage-link {
+  display: block;
+}
+.frontpage-link p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.frontpage-link-container:hover h3 {
+  color: #D3751C;
+  transition: all 0.3s ease-in-out;
+}
+.frontpage-link-container:hover path {
+  fill: #D3751C;
+  transition: all 0.3s ease-in-out;
+}
+.frontpage-link-container h3 {
+  color: #6e6e6e;
+  transition: all 0.3s ease-in-out;
+}
+.frontpage-link-container path {
+  fill: #6e6e6e;
+  transition: all 0.3s ease-in-out;
+}
+/* Secret for later: https://jtauber.github.io/articles/css-hexagon.html */
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+
+.hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #6C6;
+    position: relative;
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+#hero p {
+  max-width: 800px;
+}
+#hero blockquote {
+  font-size: 1.5em;
+}
+#hero.publications h3 {
+  text-emphasis: italic;
+  color: #989898;
+}
+.publications-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.publications-table td:first-child {  
+  font-weight: bold;
+  width: 150px;
+}
+.publications-table-links {
+  list-style-type: none;
+  margin: 0;
+}
+.publications-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+.publications-list li {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.publications-list .description {
+  color: #989898;
+}
+.publications-authors {
+  padding: 0 5%;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.pull-right {
+  float: right;
+}
+h2:target { 
+  display: block;
+  margin-top: -88px; 
+  padding-top: 88px;
+}
+@media only screen and (min-width: 900px) {
+  .frontpage-image {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 450px) {
+  .frontpage-image {
+    width: 100%;
+    max-width: 225px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .frontpage-image {
+    width: 100%;
+  }
+}
+
+/* ---- COLORS ---- */
+a {
+  color: #161688; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7F8BBF; }
+  
+.button.primary {
+  background-color: #D3751C;
+}
+.button.primary:hover {
+  background-color: #D3751Caa;
+}
+.button.primary.outline {
+  background: 0 0;
+  color: #D3751C;
+  border-color: #D3751C;
+}
+.button.primary.outline:hover {
+  background: 0 0;
+  color: #D3751Caa;
+  border-color: #D3751Caa;
+}
+.button.info {
+  background-color: #161688;
+}
+.button.info:hover {
+  background-color: #7F8BBF;
+}
+p > code {
+  /*background: #f8f8f8;*/
+  background: white;
+  color: #D3751C;
+  border: #D3751C33 solid 1px;
+  border-radius: 4px;
+  padding: 4px 4px;
+  font-size: 80%;
+}
+
+p > .pkg {
+  color: #53804d;
+  font-weight: 300;
+  font-size: 90%;
+  font-family: 'Fira Mono', monospace;
+  padding: 1px 4px;
+  /*background-color: #eff4ef;*/
+  border-radius: 4px;
+  border: 1px solid #82c878;
+}
+p > .pkg > a {
+  width: 100%;
+  height: 100%;
+  color: #53804d;
+}
+
+p > .pkg > a:hover {
+  margin-left: -4px;
+  padding-left: 4px;
+  margin-right: -4px;
+  padding-right: 4px;
+  background-color: #eff4ef;
+}
+
+h1 > code, h2 > code, h3 > code, h4 > code, h5 > code {
+  background: none;
+  color: #222;
+}
+
+pre code {
+  overflow-x: auto;
+  white-space: pre;
+}
+  
+#components h4 a {
+  color: #D3751C; }
+
+#components h4 a:hover {
+  color: #161688; }
+
+#hero p:before {
+  background: #D3751C;
+}

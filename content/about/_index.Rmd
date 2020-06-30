@@ -30,10 +30,10 @@ links <- list(
   )
 )
 link_images <- list(
-  email = "far fa-envelope-open",
-  twitter = "fab fa-twitter",
-  github = "fab fa-github",
-  link = "fas fa-link"
+  email = "fa fa-envelope-open",
+  twitter = "fa fa-twitter",
+  github = "fa fa-github",
+  link = "fa fa-link"
 )
 link_prefix <- list(
   email = "mailto:",

@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: "Meet the Fridley Lab"
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console
 ---

@@ -100,11 +100,15 @@ Her current work focuses on the molecular epidemiology of prostate and brain can
 :::: {.col .col-6 .about-card}
 ## Chris Wilson
 
-`r headshot_image("/img/headshot-wilson.png")`
+`r headshot_image("/img/headshot-wilson.jpeg")`
 
 `r make_table("Chris Wilson")`
 
-Chris is awesome! 
+Chris Wilson is currently a researcher at Moffitt Cancer Center. He received
+his MS and Ph.D. from the Department of Mathematical Sciences at Clemson 
+University. His research involves developing integrative omic machine learning
+tools for personalized medicine and using deep learning for cell type 
+classification with single-cell data.
 
 ::::
 ::::::
